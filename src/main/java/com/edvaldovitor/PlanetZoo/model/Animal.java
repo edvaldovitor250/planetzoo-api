@@ -1,5 +1,10 @@
 package com.edvaldovitor.PlanetZoo.model;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component
+@Scope("prototype")
 public class Animal {
 
     private int id;
