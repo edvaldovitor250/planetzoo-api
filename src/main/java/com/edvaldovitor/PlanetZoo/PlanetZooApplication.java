@@ -16,6 +16,11 @@ public class PlanetZooApplication {
 		animal1.setName("Cachorro");
 		animal1.setSpecies("PitBull");
 
+		AnimalRepository repo = context.getBean(AnimalRepository.class);
+		repo.save(animal1);
+
+		System.out.println(repo.findAll());
+
 
 
 	}
