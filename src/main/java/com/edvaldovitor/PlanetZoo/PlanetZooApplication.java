@@ -1,6 +1,7 @@
 package com.edvaldovitor.PlanetZoo;
 
 import com.edvaldovitor.PlanetZoo.model.Animal;
+import com.edvaldovitor.PlanetZoo.repository.AnimalRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;

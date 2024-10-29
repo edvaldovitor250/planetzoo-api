@@ -1,0 +1,5 @@
+CREATE TABLE Animal (
+    id INT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    species VARCHAR(255) NOT NULL
+);

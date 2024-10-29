@@ -1,0 +1,10 @@
+INSERT INTO Animal (id, name, species) VALUES (1, 'Leo', 'Leão');
+INSERT INTO Animal (id, name, species) VALUES (2, 'Ella', 'Elefante');
+INSERT INTO Animal (id, name, species) VALUES (3, 'Stripes', 'Tigre');
+INSERT INTO Animal (id, name, species) VALUES (4, 'Spot', 'Guepardo');
+INSERT INTO Animal (id, name, species) VALUES (5, 'Rocky', 'Rinoceronte');
+INSERT INTO Animal (id, name, species) VALUES (6, 'Splash', 'Golfinho');
+INSERT INTO Animal (id, name, species) VALUES (7, 'Whiskers', 'Gato Selvagem');
+INSERT INTO Animal (id, name, species) VALUES (8, 'Spike', 'Porco-espinho');
+INSERT INTO Animal (id, name, species) VALUES (9, 'Hoot', 'Coruja');
+INSERT INTO Animal (id, name, species) VALUES (10, 'Tango', 'Pinguim');
