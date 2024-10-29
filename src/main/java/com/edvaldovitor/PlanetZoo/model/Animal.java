@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
 @Component
 @AllArgsConstructor
 @NoArgsConstructor
-@Scope("prototype")
 @Data
 public class Animal {
 
