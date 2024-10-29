@@ -1,10 +1,14 @@
 package com.edvaldovitor.PlanetZoo.model;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.util.Objects;
 
+@NoArgsConstructor
+@AllArgsConstructor
 @Component
 @Scope("prototype")
 public class Animal {
@@ -13,11 +17,9 @@ public class Animal {
     private String name;
     private String species;
 
-    // Construtor padrão
     public Animal() {
     }
 
-    // Construtor completo
     public Animal(int id, String name, String species) {
         if (id <= 0) {
             throw new IllegalArgumentException("ID must be a positive integer.");
