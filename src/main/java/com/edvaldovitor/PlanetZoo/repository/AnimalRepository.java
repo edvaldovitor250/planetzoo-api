@@ -34,4 +34,16 @@ public class AnimalRepository {
                 rs.getString("species")
         ));
     }
+
+    public void update(int id, String newName, String newSpecies) {
+        String sql = "UPDATE animal SET name = ?, species = ? WHERE id = ?";
+        int rows = template.update(sql, newName, newSpecies, id);
+        System.out.println(rows + " row(s) updated.");
+    }
+
+    public void delete(int id) {
+        String sql = "DELETE FROM animal WHERE id = ?";
+        int rows = template.update(sql, id);
+        System.out.println(rows + " row(s) deleted.");
+    }
 }

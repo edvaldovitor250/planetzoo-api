@@ -15,6 +15,12 @@ public class PlanetZooApplication {
 		try {
 			repo.createAndSaveAnimal(111, "Cachorro", "PitBull");
 
+			repo.update(111, "Cachorro Atualizado", "Labrador");
+
+			repo.findAll().forEach(System.out::println);
+
+			repo.delete(111);
+
 			repo.findAll().forEach(System.out::println);
 
 		} catch (Exception e) {
