@@ -1,6 +1,5 @@
 package com.edvaldovitor.PlanetZoo;
 
-import com.edvaldovitor.PlanetZoo.model.Animal;
 import com.edvaldovitor.PlanetZoo.repository.AnimalRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,19 +10,15 @@ public class PlanetZooApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(PlanetZooApplication.class, args);
-
-		Animal animal1 = context.getBean(Animal.class);
-		animal1.setId(111);
-		animal1.setName("Cachorro");
-		animal1.setSpecies("PitBull");
-
 		AnimalRepository repo = context.getBean(AnimalRepository.class);
-		repo.save(animal1);
 
-		System.out.println(repo.findAll());
+		try {
+			repo.createAndSaveAnimal(111, "Cachorro", "PitBull");
 
+			repo.findAll().forEach(System.out::println);
 
-
+		} catch (Exception e) {
+			System.err.println("An error occurred while interacting with the repository: " + e.getMessage());
+		}
 	}
-
 }
